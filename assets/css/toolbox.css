@@ -1,0 +1,108 @@
+#page-gongjuxiang{
+    user-select: none;
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: auto;
+    font-family: ChunQiu_QiuHong;   
+    display: none;
+}
+#page-gongjuxiang-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#page-gongju-icon{
+    user-select: none;
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    font-size: 10vw;
+    left: 50%;
+    margin-left: -17vw;
+    top: 5vw;
+    animation: gear 1s ease-in-out;
+}
+#page-gongjuxiang-title{
+    position: absolute;
+    font-size: 5vw;
+    right: 15vw;
+    top: 2.5vw;
+    color: #000000;
+    animation: title 1s ease-in-out;
+    transition: all 0.25s;
+}
+#toollist{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 19vw;
+    padding-top: 5vw;
+    text-align: center;
+}
+.tool-li{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    border-radius: 10px;
+    line-height: 5vw;
+    transition: all 0.25s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.tool-li:hover{
+    filter: brightness(50%);
+}
+#li-text{
+    position: absolute;
+    left: 3vw;
+    font-size: 2vw;
+    color: #000;
+}
+#li-text-right{
+    position: absolute;
+    right: 2vw;
+    font-size: 1.1vw;
+    color: #000;
+}
+#li-bg{
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    border-radius: 10px;
+    background-color: white;
+}
+#cps{
+    top: 0vw;
+}
+#calc{
+    top: 6vw;
+}
+@keyframes gear {
+    from{
+        transform: rotateZ(0deg);
+        margin-left: -5vw;
+    }
+    to{
+        transform: rotateZ(360deg);
+        margin-left: -17vw;
+    }
+}
+@keyframes title{
+    from{
+        right: 25vw;
+        color: #5e5e63;
+        filter: opacity(0);
+    }
+    to{
+       right: 15vw;
+       color: #000000;
+       filter: opacity(1);
+    }
+}
