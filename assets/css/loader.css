@@ -1,0 +1,35 @@
+#load{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.63);
+}
+#loadbox{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  text-align: center;
+}
+
+#loading {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-top-color: transparent;
+    border-radius: 100%;
+    animation: circle infinite 0.75s linear;
+    overflow: hidden;
+}
+@keyframes circle {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
